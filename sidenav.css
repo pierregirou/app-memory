@@ -1,0 +1,133 @@
+@import './style.css';
+
+.openNav {
+    padding: 5px;
+    height: 50px;
+    visibility: visible;
+}
+
+.btn-burger{
+    width:50px;
+    height:50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.burger {
+    width: 40px;
+    height: 2px;
+    background-color: var(--bittersweet);
+    margin: 10px
+}
+
+#sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--bittersweet);
+    overflow-x: hidden;
+    opacity: 0.9;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+
+/* The navigation menu links */
+
+#sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--indigo-dye);
+    display: block;
+    transition: 0.3s;
+}
+
+#sidenav a span:nth-child(2) {
+    float: right;
+    font-size: 20px;
+    margin: auto;
+}
+
+#sidenav a:hover,.submenu p:hover  {
+    color: var( --vista-blue);
+}
+
+#sidenav .closebtn {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.submenu {
+    display: none;
+    transition: 0.5s;
+}
+
+.submenu div p:first-child  {
+    width: 70%;
+}
+.submenu p, .submenu label {
+    cursor: pointer;
+}
+
+.submenu div p {
+    display: inline-block;
+    margin: auto;
+    cursor: pointer;
+}
+
+input[type="radio"]{
+    visibility: hidden;
+  }
+  
+input[type="radio"]:checked+label{
+    color: var(--vista-blue);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.submenuOpen {
+    display: block;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--indigo-dye);
+    transition: 0.5s;
+}
+
+.rotateCrossMenu{
+    transform : rotate(45deg)
+}
+
+.indigo {
+    background-color: #074074ff;
+    width: 20px;
+    height: 20px;
+}
+
+.vista {
+    background-color: #8390faff;
+    width: 20px;
+    height: 20px;
+}
+
+.sunglow {
+    background-color: #ffca3aff;
+    width: 20px;
+    height: 20px;
+}
+
+.yellow-green {
+    background-color: #8ac926ff;
+    width: 20px;
+    height: 20px;
+}
