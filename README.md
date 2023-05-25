@@ -10,3 +10,8 @@ thème du memory:
 - Stranger things
 - Disney
 - pokemon
+
+Revoir la structure des fichier car vite.js compile des link avec des erreurs.
+css image
+lien js script
+lien css linkutilisation de variable pas encore initialisées.
