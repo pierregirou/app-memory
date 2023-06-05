@@ -1,17 +1,22 @@
-import definedTheme from './main.js';
+import definedTheme from '/main.js';
 
 const sidenavElemnt = document.getElementById('sidenav');
 const btnopenNav = document.getElementsByClassName('openNav')[0];
 var cardPile = document.getElementsByClassName('pile');
 const crossSubMenu = document.querySelectorAll(".cross-submenu");
 
+console.log(sidenavElemnt,btnopenNav,cardPile)
 export function openNav() {
+    const sidenavElemnt = document.getElementById('sidenav');
     sidenavElemnt.style.width = '20%';
+    const btnopenNav = document.getElementsByClassName('openNav')[0];
     btnopenNav.style.visibility = 'hidden'
 }
 
 export function closeNav() {
+    const sidenavElemnt = document.getElementById('sidenav');
     sidenavElemnt.style.width = '0%'
+    const btnopenNav = document.getElementsByClassName('openNav')[0];
     btnopenNav.style.visibility = 'visible'
 }
 
@@ -26,6 +31,7 @@ export function changeTheme(value) {
 }
 
 export function changeColorCard(variableCSS) {
+    var cardPile = document.getElementsByClassName('pile');
     Array.from(cardPile).forEach((item) => {
         item.style.backgroundColor = `var(--${variableCSS})`
     })

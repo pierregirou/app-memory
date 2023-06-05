@@ -1,12 +1,12 @@
 import './style.css';
-import javascriptLogo from './javascript.svg';
+import javascriptLogo from '/javascript.svg';
 import viteLogo from '/vite.svg';
 import { setupCounter } from './counter.js';
 import Disney from '/public/mock/mock-card-disney.js';
 import HarryPotter from '/public/mock/mock-card-harryPotter.js';
 import Pokemon from '/public/mock/mock-card-pokemon.js';
 import Strangerthings from '/public/mock/mock-card-strangerthings.js';
-import { changeColorCard, openNav, closeNav, openSubmenu, changeTheme, nombreJoueur } from '/sidenav.js';
+import { changeColorCard, openNav, closeNav, openSubmenu, changeTheme, nombreJoueur } from './sidenav.js';
 
 window.openNav = openNav;
 window.closeNav = closeNav;
@@ -162,5 +162,9 @@ if (localStorage.getItem('color-card') != null) {
 }
 
 window.reloadMemory = ()=>{
+  var divPiont = document.querySelectorAll('div.point');
+  divPiont.forEach((item)=>{
+    item.remove();
+  })
   definedTheme()
 }

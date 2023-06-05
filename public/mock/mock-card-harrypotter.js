@@ -42,6 +42,10 @@ const HarryPotter = [{
         id: 11,
         url: 'https://ik.imagekit.io/hpapi/luna.jpg',
     },
+    {
+        id: 12,
+        url: 'https://ik.imagekit.io/hpapi/voldemort.jpg',
+    }
 ];
 
 export default HarryPotter;
