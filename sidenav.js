@@ -8,7 +8,7 @@ const crossSubMenu = document.querySelectorAll(".cross-submenu");
 console.log(sidenavElemnt,btnopenNav,cardPile)
 export function openNav() {
     const sidenavElemnt = document.getElementById('sidenav');
-    sidenavElemnt.style.width = '20%';
+    sidenavElemnt.style.width = "calc(100vw/1.5)";
     const btnopenNav = document.getElementsByClassName('openNav')[0];
     btnopenNav.style.visibility = 'hidden'
 }
